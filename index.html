@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B+M</title>
+</head>
+<style>
+    .tt{
+        color: white;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        line-height: 10px;
+    }
+    h2{
+        color: white;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        line-height: 15px;
+    }
+    h3{
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        line-height: 15px;
+    }
+    h4{
+        color: red;
+        text-align: center;
+        font-size: 35px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        line-height: 1mm;
+    }
+    .img1{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .img2{
+        display: inline-block;
+        border-radius: 10px;
+        }
+    body{
+    background-image: repeating-linear-gradient(
+    45deg,
+    #990000,
+    #990000 10px,
+    #660000 10px,
+    #660000 20px
+  );
+    }
+    .tx1{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        line-height: 7px;
+    }
+    .tx2{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    .tx3{
+        color: rgb(247, 190, 3);
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    .tx4{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #resultado{
+        font-size: 1.5em;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+        line-height: 55px;
+    }
+    .tt1{
+        color: darkgoldenrod;
+        text-align: center;
+        text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        line-height: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+<body>
+ <h1 class="tt">Cinco meses</h1>   
+ <h2>Que</h2>
+ <h3>Te pedi</h3>
+ <h4>Em NAMORO</h4>
+ <div id="resultado"></div>
+<script>
+  const dataInicial = new Date('2024-12-23');
+
+  function atualizarDias() {
+    const hoje = new Date();
+    const diferencaMs = hoje - dataInicial;
+    const dias = Math.floor(diferencaMs / (1000 * 60 * 60 * 24));
+
+    document.getElementById('resultado').textContent = `Desde que te pedi em namoro, já se passaram ${dias} dias.`;
+  }
+
+  atualizarDias();
+
+  setInterval(atualizarDias, 24 * 60 * 60 * 1000);
+</script>
+<div style="display: flex; justify-content: center; gap: 10px;">
+     <img class="img1" src="assets/bm.jpeg" width="250px">
+     <img class="img2" src="assets/bm2.jpeg" width="250px" height="335px">
+</div>
+ <p class="tx1">Cinco meses que fiz a melhor escolha da minha vida!</p>
+ <p class="tx2">Cinco meses que te escolhi para ser minha mulher.</p>
+ <p class="tx3">Cinco meses que te escolhi, Maria!</p>
+ <p class="tx4">Cinco grandes meses que estamos juntos, vivendo coisas incríveis ao seu lado, que te escolhi para ser a mulher da minha vida, a mulher que amarei até a morte. Saiba que sou loucamente apaixonado por voce, meu amor. Tudo que já vivemos, tudo que ainda viveremos, tudo isso é muito importante para mim. Quando te vejo meu coração dispara, bate mais rapido por voce Maria! Voce é tudo que sempre sonhei e dejesei, a mulher perfeita, para mim! </p>
+<h3 class="tt1">E sabe amor? Sou muito feliz com a gente, tudo que viveremos, a familia que vamos construir, tudo isso me motiva a continuar com voce, a correr atrás de voce, por que é isso que eu quero, ser feliz com voce, Maria!</h3>
+</body>
+</html>
